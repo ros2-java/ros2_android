@@ -1,0 +1,16 @@
+sudo: required
+
+language: generic
+
+services:
+  - docker
+
+before_install:
+- docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+- docker pull esteve/ros2-ubuntu-xenial-travisci:android
+
+env:
+- ROS2_JAVA_BRANCH=master
+
+script:
+- docker run -e ROS2_JAVA_BRANCH=$ROS2_JAVA_BRANCH -it --rm esteve/ros2-ubuntu-xenial-travisci:android sh /build_android.sh
