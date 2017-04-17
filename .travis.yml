@@ -13,4 +13,4 @@ env:
 - ROS2_JAVA_BRANCH=master
 
 script:
-- docker run -e ROS2_JAVA_BRANCH=$ROS2_JAVA_BRANCH -it --rm esteve/ros2-ubuntu-xenial-travisci:android sh /build_android.sh
+- docker run -e TRAVIS=$TRAVIS -e ROS2_JAVA_BRANCH=$ROS2_JAVA_BRANCH -it --rm esteve/ros2-ubuntu-xenial-travisci:android sh /build_android.sh
