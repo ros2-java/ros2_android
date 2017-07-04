@@ -1,6 +1,3 @@
-# ros2_android
+# ROS2 Android drivers
 
-This is an empty repository to trick Travis CI into building ros2_java for Android.
-
-Visit https://github.com/esteve/ros2_java instead for instructions on how to try out
-ros2_java on Android.
+This is a collection of ROS2 drivers for several Android sensors.

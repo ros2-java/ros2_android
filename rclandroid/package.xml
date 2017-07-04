@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rclandroid</name>
+  <version>0.0.0</version>
+  <description>ROS2 drivers for common Android sensors.</description>
+  <maintainer email="esteve@apache.org">Esteve Fernandez</maintainer>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_export_jars</buildtool_depend>
+
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+  <buildtool_depend>rosidl_generator_java</buildtool_depend>
+
+  <build_depend>rcljava</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <exec_depend>rcljava</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+
+  <export>
+    <build_type>ament_gradle</build_type>
+  </export>
+</package>
