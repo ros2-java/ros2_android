@@ -1,6 +1,3 @@
-# ros2_android
+# ROS2 Android API
 
-This is an empty repository to trick Travis CI into building ros2_java for Android.
-
-Visit https://github.com/esteve/ros2_java instead for instructions on how to try out
-ros2_java on Android.
+Check out [ros2_java](https://github.com/esteve/ros2_java) for instructions on how to build the ROS2 Java bindings and [ros2_android_examples](https://github.com/esteve/ros2_android_examples) for examples on how to use the ROS2 Android API.
